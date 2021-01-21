@@ -1,0 +1,166 @@
+// variables 
+// Color 
+$primary_color: rgb(6, 136, 71);
+
+/* Fixed Social Icon on WEbpage  */
+.social_icon_fixed{
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    ul{
+        li{
+            background: rgb(18, 111, 218);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            transition: 0.5s;
+            animation: animate 40s ease-in-out infinite;
+            
+            &:hover{
+                width: 50px;
+            }
+          a{
+            color: white;
+            display: block;
+            padding-top: 10px;
+          }   
+        }
+        @keyframes animate {
+            0%{
+                background: black;
+            }
+            40%{
+                 background: #dc3545; 
+            }
+            80%{
+                background: rgb(107, 5, 148);
+            }
+            100%{
+                background: cadetblue;
+            }
+        }
+    }
+}
+// Header Banner 
+.top_banner_wrapper{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.794),rgba(0, 0, 0, 0.747)),url(../img/top_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .top_banner_inner{
+        .top_banner_text{
+            padding: 180px 0px;
+            h1{
+                font-size: 3rem;
+            }
+            .social_icon{
+                margin-top: 20px;
+                a{
+                    background: white;
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 0%;
+                    text-align: center;
+                    color: black;
+                    margin: 2px;
+                    transition: 0.4s;
+                    &:hover{
+                        background: transparent;
+                        border: 1px solid white;
+                        color: white;
+                    }
+
+                    i{
+                        font-size: 18px;
+                        padding-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Portfolios 
+.portfolios_sample{
+     transition: 1s;
+     cursor: pointer;
+    &:hover .card-background{
+        opacity: 1 !important;
+    }
+    .card-background{
+        background: rgba(5, 133, 133, 0.651);
+        color: white;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+}
+
+// Educational 
+.educational_text{
+    .row{
+        .educational_item{
+           transition: .3s;
+           &:hover{
+               background: #dc3545 !important;
+               color: white;
+           }
+           &:hover .logo{
+            background: #dc3545 !important;
+            color: white;
+            border: 1px solid white;
+        }
+           .logo
+           {
+               width: 80px;
+               background: black;
+               height: 80px;
+               border-radius: 50%;
+               margin: auto;
+               color: white;
+               margin: 10px auto;
+               i{
+                   padding-top:24px;
+                   font-size: 30px;
+               }
+               &:nth-child(3){
+                   background: none !important;
+               }
+           }
+        }
+    }
+}
+// About 
+    .about_text{
+        .row{
+            .img_block_banner{
+                height: 500px;
+                overflow: hidden;
+                img{
+                    width: 60%;
+                }
+            }
+        }
+    }
+// Footer 
+footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.794),rgba(0, 0, 0, 0.747));
+    .footer_text{
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                color: rgb(84, 197, 150);
+            }
+        }
+    }
+}
+.flex-slider{
+  pointer-events: none;  
+}
+.card-background{
+    pointer-events: none !important;
+}
